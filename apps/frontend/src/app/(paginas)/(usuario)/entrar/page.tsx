@@ -1,7 +1,11 @@
-export default function Page(){
+'use client'
+import { Suspense } from 'react'
+import FormUsuario from '@/components/usuario/FormUsuario'
+
+export default function Page() {
     return (
-        <div>
-            <h1>Entrar</h1>
-        </div>
+        <Suspense fallback={<div>Carregando...</div>}>
+            <FormUsuario />
+        </Suspense>
     )
 }
