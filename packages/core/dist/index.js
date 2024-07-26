@@ -231,6 +231,14 @@ var DataUtils = class {
     novaData.setHours(parseInt(partes[0]), parseInt(partes[1]));
     return novaData;
   }
+  static formatarData(data) {
+    return data.toLocaleDateString("pt-BR", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  }
 };
 
 // src/utils/TelefoneUtils.ts
