@@ -16,7 +16,7 @@ export default function ServicoItem(props: ServicoItemProps) {
             onClick={() => props.onClick?.(props.servico)}
         >
             <Image
-                src={props.servico.imageUrl}
+                src={props.servico.imagemURL}
                 width={150}
                 height={150}
                 alt={props.servico.nome}

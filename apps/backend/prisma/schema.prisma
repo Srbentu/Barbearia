@@ -15,9 +15,9 @@ datasource db {
 
 model Profissional {
   id                   Int           @id @default(autoincrement())
-  nome                 String        
+  nome                 String        @unique
   descricao            String
-  imageUrl            String
+  imagemUrl            String
   avaliacao            Float
   quantidadeAvaliacoes Int
   agendamentos         Agendamento[]
@@ -31,7 +31,7 @@ model Servico {
   descricao    String
   preco        Float
   qtdeSlots    Int
-  imageUrl    String
+  imagemURL    String
   agendamentos Agendamento[]
 
   @@map("servico")

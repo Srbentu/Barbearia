@@ -1,9 +1,9 @@
-import { View, Text } from "react-native";
+import { Text, View } from 'react-native'
 
-export default function App(){
+export default function App() {
     return (
-        <View style={{ flex:1,justifyContent:'center', alignItems:'center'}}>
-            <Text>APP LIndo</Text>
-        </View>    
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Mobile</Text>
+        </View>
     )
 }

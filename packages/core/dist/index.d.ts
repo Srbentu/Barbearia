@@ -2,7 +2,7 @@ interface Profissional {
     id: number;
     nome: string;
     descricao: string;
-    imageUrl: string;
+    imagemUrl: string;
     avaliacao: number;
     quantidadeAvaliacoes: number;
 }
@@ -13,7 +13,7 @@ interface Servico {
     descricao: string;
     preco: number;
     qtdeSlots: number;
-    imageUrl: string;
+    imagemURL: string;
 }
 
 interface Agendamento {
